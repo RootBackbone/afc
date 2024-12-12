@@ -1,0 +1,53 @@
+/* Fondo y estilos generales del footer */
+.footer {
+    background-color: #1E293B; /* Color de fondo */
+    color: white; /* Texto en blanco */
+    padding: 40px 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #F4B401; /* Color amarillo al hacer hover */
+}
+
+.footer h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+}
+
+/* Apilar las columnas en pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .col {
+        margin-bottom: 20px;
+    }
+
+    .footer .social-icons {
+        margin-bottom: 20px;
+    }
+}
