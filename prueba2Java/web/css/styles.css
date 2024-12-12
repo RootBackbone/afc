@@ -1,0 +1,335 @@
+/* Estilos generales */
+.body {
+    font-family: Verdana, sans-serif;
+    background-color: #1E293B; /* Fondo principal */
+    color: #F1F5F9; /* Texto principal */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Title {
+    color: #3B82F6; /* Azul Brillante */
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Guardar variables */
+:root {
+    --primary-color: #3B82F6; /* Azul Brillante */
+    --secondary-color: #F1F5F9; /* Texto principal */
+    --background-color: #1E293B; /* Fondo principal */
+    --button-color: #3B82F6; /* Azul Brillante */   
+    --button-outline-color: #E0F2FE; /* Fondo del botón */
+    --button-hover-color: #2563EB; /* Azul Oscuro */
+}
+
+/* Estilos para el botón basado en Uiverse.io */
+.button {
+    --button_radius: 0.5em;
+    --button_color: #E0F2FE; /* Fondo del botón */
+    --button_outline_color: #3B82F6; /* Borde del botón */
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--button_radius);
+    display: inline-block;
+    text-decoration: none;
+    background: var(--button_outline_color);
+    padding: 0.2em;
+    position: relative;
+    transition: transform 0.1s ease;
+    color: #1E293B;
+}
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.5em 1em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+.button:hover .button_top {
+    transform: translateY(-0.33em);
+    background: #2563EB; /* Hover Azul Oscuro */
+    color: #F1F5F9;
+}
+
+.button:active .button_top {
+    transform: translateY(0);
+}
+
+/* Barra de navegación */
+.nav-bar {
+    width: 100%;
+    background-color: #1E293B;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    color: #F1F5F9;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.icon-prefix {
+    margin-right: 5px;
+    color: white; /* Gris Azulado */
+    vertical-align: middle;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #334155; /* Fondo del contenedor */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    color: white;
+}
+
+.container-menu {
+    height: 100vh;
+    background-color: #334155; /* Color de fondo del contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px
+}
+
+/* Centrar el formulario en la pantalla */
+.container-formulario {
+    background-color: #334155;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título del formulario */
+.container-formulario h1 {
+    color: #3B82F6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Texto de advertencia */
+.container-formulario .red-text {
+    color: #f87171;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los campos de entrada y etiquetas */
+.container-formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.container-formulario input,
+.container-formulario select {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container-formulario input:focus,
+.container-formulario select:focus {
+    outline: none;
+    border-color: #3B82F6;
+    background-color: #f1f5f9;
+}
+
+/* Estilos para las opciones del select */
+.container-formulario select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.container-formulario option {
+    background-color: #1E293B;
+    color: var(--secondary-color);
+}
+
+/* Contenedor para los botones */
+/* Contenedor para los botones */
+.container-formulario .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-formulario .button {
+    --button_radius: 0.5em;
+    --button_color: #E0F2FE; /* Fondo del botón */
+    --button_outline_color: #3B82F6; /* Borde del botón */
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--button_radius);
+    display: inline-block;
+    text-decoration: none;
+    background: var(--button_outline_color);
+    padding: 0.2em;
+    position: relative;
+    transition: transform 0.1s ease;
+    color: #1E293B;
+}
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.5em 1em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+.button:hover .button_top {
+    transform: translateY(-0.33em);
+    background: #2563EB; /* Hover Azul Oscuro */
+    color: #F1F5F9;
+}
+
+.button:active .button_top {
+    transform: translateY(0);
+}
+
+/* Botón de retroceso mejorado */
+.container-formulario .back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espacio entre la flecha y el texto */
+    height: 3em;
+    padding: 0 16px; /* Ajustar padding para centrado horizontal */
+    background-color: #E0F2FE;
+    border-radius: 5px;
+    color: #3B82F6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container-formulario .back-button:hover {
+    background-color: #3B82F6;
+    color: #F1F5F9;
+}
+
+/* Estilos para el ícono */
+.container-formulario .back-button i {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+/* Fin del formulario */
+
+
+/* Estilos para los campos de entrada */
+.input-group-text {
+    background-color: #3B82F6;
+    color: #F1F5F9;
+    border-radius: 5px 0 0 5px;
+}
+
+.form-control {
+    border-radius: 0 5px 5px 0;
+    padding: 10px;
+    outline: none;
+}
+
+/* Estilos para el botón de retroceso */
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    width: 120px;
+    background-color: #E0F2FE;
+    border-radius: 5px;
+    color: #3B82F6;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    background-color: #3B82F6;
+    color: #F1F5F9;
+    transform: translateY(-2px);
+}
+
+.back-button > i {
+    margin-right: 8px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+/* Ajustes del carrusel */
+.carousel {
+    max-width: 300px; /* Ancho máximo del carrusel */
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Ajustes para las imágenes del carrusel */
+.carousel-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Ajusta esta altura según tu diseño */
+    object-fit: contain; /* Asegura que toda la imagen sea visible */
+}
+.footer {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 3rem 0;
+}
