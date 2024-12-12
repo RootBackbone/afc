@@ -1,0 +1,187 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Menú lateral */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #002c97;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+}
+
+/* Ajustes para el contenedor del logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.logo-img {
+    max-width: 40px;
+    height: auto;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    color: white; /* Texto blanco */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo a:hover .logo-text {
+    color: white; /* Mantener el texto blanco al pasar el ratón */
+    text-decoration: none;
+}
+
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.menu-list li {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden; /* Evitar que se desborde */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho */
+}
+
+.menu-list li a, .logout-btn {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+    box-sizing: border-box;
+}
+
+.menu-list li a:hover, .logout-btn:hover {
+    background-color: #2d758d;
+    cursor: pointer;
+    padding-left: 20px; /* Espaciado adicional para indicar que se seleccionó */
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Contenido principal */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+}
+
+header {
+    background-color: #002c97;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 2px solid #002c97; /* Agrega un borde de 2px con un color azul */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card a {
+    text-decoration: none;
+    color: #002c97;
+    font-weight: bold;
+    display: block;
+}
+
+/* Estilos para el botón de cierre de sesión */
+.logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 44px;
+    height: 44px;
+    background-color: #e63946; /* Rojo */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logout-btn:hover {
+    width: 140px;
+    border-radius: 10px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+}
+
+.logout-btn .text {
+    position: absolute;
+    right: 10px;
+    transform: translateX(100%);
+    opacity: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.logout-btn:hover .text {
+    transform: translateX(0);
+    opacity: 1;
+}
+
