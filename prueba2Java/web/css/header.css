@@ -1,0 +1,96 @@
+/* Contenedor del Header */
+.header-container {
+    width: 100%;
+    background-color: #3B82F6;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra de navegación */
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Logo y menú de navegación alineados a la izquierda */
+.header-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.header-logo img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.header-logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+}
+
+.header-nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    align-items: center;
+}
+
+.header-nav-links a:hover {
+    color: #ffc107;
+}
+
+/* Formulario de inicio de sesión alineado a la derecha */
+.login-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-form input {
+    border-radius: 10px;
+    padding: 5px 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    width: 150px; /* Reducir el ancho de los campos */
+    font-size: 14px;
+}
+
+.btn-light {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: white;
+    color: #0e52ff;
+    border: 2px solid #0e52ff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+.btn-light:hover {
+    background-color: #0041c2;
+    color: white;
+}
